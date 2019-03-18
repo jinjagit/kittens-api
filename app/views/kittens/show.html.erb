@@ -2,12 +2,14 @@
     <div style="color:green"><%= value %></div><br>
 <% end %>
 
-<%= "Details of specific kitten:" %><br><br>
+<%= "Details of kitten:" %><br><br>
 <%= "id: #{@kitten.id}" %><br>
 <%= "name: #{@kitten.name}" %><br>
 <%= "age: #{@kitten.age}" %><br>
 <%= "cuteness: #{@kitten.cuteness}" %><br>
 <%= "softness: #{@kitten.softness}" %><br><br>
 <%= link_to "edit this kitten", edit_kitten_path(@kitten.id), style: "color: blue" %>
-<br><br>
+<br>
+<%= link_to "delete this kitten", @kitten, style: "color: blue", method: :delete,
+                                  data: { confirm: "You sure?" } %><br>
 <%= link_to "index of all kittens", kittens_path, style: "color: blue" %>

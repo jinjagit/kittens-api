@@ -12,6 +12,7 @@
   <%= "age: #{kitten.age}" %>
   <%= "cuteness: #{kitten.cuteness}" %>
   <%= "softness: #{kitten.softness}" %>
+  <%= link_to "show", kitten_path(kitten), style: "color: blue" %>
   <%= link_to "delete", kitten, style: "color: blue", method: :delete,
                                     data: { confirm: "You sure?" } %>
   <%= link_to "edit", edit_kitten_path(kitten), style: "color: blue" %>

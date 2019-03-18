@@ -13,7 +13,8 @@ class KittensController < ApplicationController
   end
 
   def create
-    @kitten = Kitten.new(name: params[:kitten][:name], age: params[:kitten][:age],
+    @kitten = Kitten.new(name: params[:kitten][:name],
+                          age: params[:kitten][:age],
                           cuteness: params[:kitten][:cuteness],
                           softness: params[:kitten][:softness])
     if @kitten.save

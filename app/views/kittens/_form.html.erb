@@ -10,6 +10,8 @@
   <% if action == 'new' %>
     <%= f.submit "create kitten" %>
   <% else %>
-    <%= f.submit "edit kitten" %>
+    <%= f.submit "edit kitten" %><br><br>
+    <%= link_to "delete this kitten", @kitten, style: "color: blue", method: :delete,
+                                      data: { confirm: "You sure?" } %><br>
   <% end %>
 <% end %>
