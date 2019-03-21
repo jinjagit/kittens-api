@@ -4,7 +4,7 @@ Simon Tharby's solution to [Project 1: Building a Simple Kittens API](https://ww
 
 ## RestClient in IRB:
 
-To query the app via JSON request, you will need the RestClient gem installed. The open an IRB console and enter:
+To query the app via JSON request, you will need the RestClient gem installed. Then, open an IRB console and enter:
 
 ```
 $ require 'rest-client'
